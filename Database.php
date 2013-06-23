@@ -27,9 +27,7 @@ PRIVATE $agrs;
 
     public function insert($database,$table,$data)
     {
-    //echo $database;
-//echo $table;
-   // echo $data;
+    
    
         mysql_select_db($database); 
         $fieldNames = implode('`, `',array_keys($data));
